@@ -1,0 +1,21 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "tabNumber.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "Show tab number"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "description": "Show tab number",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAg6CYGrjoANmk0+GJB2C4519X0IW3JXcwL41vunrDX3uYO2XrHA93SzbnAHYM7VGdmF5N2qE/eiw/QumPi/GPdoJLGn41Z84Sac9J9uQpAALZIHgTMiwAeo2z9DTtYRsaVO3gqgnMQWNEcwRxktZcKnaWyc6TAjfDvWxFI56SmRj+TfvwQt7/wJgKk8D2zwfAnxoa5s2jc80mmQfb1CvNxtmiGkwnFUg9UjYtD1b1Q7CfNRYHpFKoLsynrn9n2tdPlAMoUmIPV9gSjEsaIqji1EjztrOYCH6D6YZT7mPwmjbzUjzLJf169vSrhEHav0StSPSt7tZac4FNSfFGmfvFvQIDAQAB",
+   "manifest_version": 2,
+   "name": "Tab Number",
+   "permissions": [ "tabs", "*://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}
